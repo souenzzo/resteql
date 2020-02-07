@@ -1,0 +1,14 @@
+{:paths   ["src/main"]
+ :deps    {org.clojure/clojure {:mvn/version "1.10.1"}}
+ :aliases {:dev {:extra-paths ["src/dev" "src/test"]
+                 :extra-deps  {org.clojure/test.check          {:mvn/version "0.10.0"}
+                               org.clojure/data.json           {:mvn/version "0.2.7"}
+                               javax.servlet/javax.servlet-api {:mvn/version "4.0.1"}
+                               spec-coerce                     {:git/url "https://github.com/souenzzo/spec-coerce"
+                                                                :sha     "d6fbc97b13f0a70d6c2e35bab2709936600078c2"}
+                               com.wsscode/spec-inspec         {:git/url "https://github.com/souenzzo/spec-inspec"
+                                                                :sha     "b6834485e2cad537c9cf0b8af026c840e854804e"}
+                               br.com.souenzzo/eql-as          {:git/url "https://github.com/souenzzo/eql-as.git"
+                                                                :sha     "85815f409b149d237b542fd64f134747df71100d"}
+                               com.wsscode/pathom              {:mvn/version "2.2.30"}
+                               io.pedestal/pedestal.service    {:mvn/version "0.5.7"}}}}}
