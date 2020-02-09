@@ -40,8 +40,7 @@
            (keyword method)
            [(body-params/body-params)
             (fn [request]
-              (-> request keys prn)
-              (let [params (p/map-select request
+              (let [params (p/map-select (:json-params request)
                                          (eql-as/ident-query {::eql-as/as-map params-as
                                                               ::eql-as/as-key :pathom/as}))
                     params (merge-in params request->params)
